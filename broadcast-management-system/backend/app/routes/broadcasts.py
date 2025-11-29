@@ -12,13 +12,12 @@ broadcasts_bp = Blueprint('broadcasts', __name__, url_prefix='/api/broadcasts')
 def list_broadcasts():
     """List all broadcasts created by the current user"""
     user_id = get_jwt_identity()
-    
     try:
         # Get pagination parameters
         page = request.args.get('page', 1, type=int)
         per_page = request.args.get('per_page', 10, type=int)
         status = request.args.get('status', None)
-        
+        user_id = int(user_id)
         # Build query
         query = Broadcast.query.filter_by(creator_id=user_id)
         
