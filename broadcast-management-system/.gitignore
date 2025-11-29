@@ -1,0 +1,75 @@
+# Backend
+backend/.env
+backend/.env.local
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/instance/
+backend/firebase-service-account.json
+backend/migrations/
+
+# Frontend
+frontend/node_modules/
+frontend/.env.local
+frontend/build/
+frontend/.next/
+frontend/dist/
+frontend/.cache/
+
+# Mobile
+mobile/build/
+mobile/.dart_tool/
+mobile/pubspec.lock
+mobile/.env
+mobile/android/.gradle/
+mobile/ios/Pods/
+mobile/ios/Podfile.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local
+.env.*.local
+*.orig
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# Credentials and sensitive files
+*.key
+*.pem
+*.cer
+*.p12
+secrets.json
+firebase-*.json
+google-services.json
+GoogleService-Info.plist
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+.tox/
